@@ -1,0 +1,14 @@
+FROM node:16
+
+WORKDIR /app
+
+COPY package*.json .
+
+RUN npm install
+
+COPY . .
+
+# added a start script in package.json
+{"name":"app","version":"1.0.0","scripts":{"start":"node server.js"},"dependencies":{},"devDependencies":{}} 
+
+CMD ["npm", "start"]
