@@ -1,0 +1,1 @@
+This repository demonstrates a common error in Dockerfiles when using npm start. The original Dockerfile lacks a start script specified in the package.json, causing the build to fail. The solution demonstrates the correct way to define the start script to launch the application.
